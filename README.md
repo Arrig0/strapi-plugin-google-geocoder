@@ -35,7 +35,7 @@ npm i strapi-plugin-google-geocoder
 },
 ...
 ...
-<!--
+{::comment}
 ```
 #### 2. Add "strapi::security" in middlewares.js
 ```javascript
@@ -58,9 +58,9 @@ npm i strapi-plugin-google-geocoder
 ...
 ...
 ```
--->
+{:/comment}
 
-#### 3. Add custom field
+#### 2. Add custom field
 
 <!-- <img src="assets/instruction.gif" alt="Logo - google map picker" /> -->
 
