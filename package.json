@@ -17,7 +17,6 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@strapi/design-system": "^1.6.3",
     "@strapi/icons": "^1.6.3",
     "@strapi/strapi": "^4.6.1",
     "google-map-react": "^2.2.0",
