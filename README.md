@@ -7,7 +7,7 @@
 </a> package</p>
 </div>
 
-<!-- <img src="assets/banner.jpg" alt="Logo - google map geocoder" /> -->
+<img src="assets/banner.jpg" alt="banner - google geocoder" />
 
 ---
 
@@ -38,7 +38,7 @@ npm i strapi-plugin-google-geocoder
 ```
 #### 2. Add custom field
 
-<!-- <img src="assets/instruction.gif" alt="Logo - google map picker" /> -->
+<img src="assets/instruction.gif" alt="instructions - google geocoder" />
 
 
 
