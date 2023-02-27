@@ -6,7 +6,7 @@
   <p>A simple strapi plugin to geocode address</p>
 </div>
 
-<img src="assets/banner.jpg" alt="banner - google geocoder" />
+<img src="assets/banner.png" alt="banner - google geocoder" />
 
 ---
 
