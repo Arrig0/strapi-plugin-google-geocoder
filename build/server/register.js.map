@@ -1,0 +1,1 @@
+{"version":3,"file":"register.js","sourceRoot":"","sources":["../../src/server/register.ts"],"names":[],"mappings":"AAAA,YAAY,CAAC;;AAKb,MAAM,QAAQ,GAAG,iBAAiB,CAAC;AAEnC,kBAAe,CAAC,EAAE,MAAM,EAAsB,EAAE,EAAE;IAEhD,MAAM,CAAC,YAAY,CAAC,QAAQ,CAAC;QACzB,IAAI,EAAE,aAAa;QACnB,MAAM,EAAE,QAAQ;QAChB,IAAI,EAAE,QAAQ;KAGjB,CAAC,CAAC;AACL,CAAC,CAAC"}

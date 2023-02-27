@@ -1,0 +1,20 @@
+{
+    "google-geocoder.label": "Google Address",
+    "google-geocoder.description": "Enter an address and automatically geocode it",
+    "google-geocoder.options.advanced.country-field": "Country field name",
+    "google-geocoder.options.advanced.country-field.description": "Insert the name of the country field to be auto populated",
+    "google-geocoder.options.advanced.region-field": "Region field name",
+    "google-geocoder.options.advanced.region-field.description": "Insert the name of the region field to be auto populated",
+    "google-geocoder.options.advanced.city-field": "City field name",
+    "google-geocoder.options.advanced.city-field.description": "Insert the name of the city field to be auto populated",
+    "google-geocoder.options.advanced.street-field": "Street field name",
+    "google-geocoder.options.advanced.street-field.description": "Insert the name of the street field to be auto populated",
+    "google-geocoder.options.advanced.home-field": "Civic number field name",
+    "google-geocoder.options.advanced.home-field.description": "Insert the name of the home field to be auto populated",
+    "google-geocoder.options.advanced.postalcode-field": "Postal code field name",
+    "google-geocoder.options.advanced.postalcode-field.description": "Insert the name of the postal code field to be auto populated",
+    "google-geocoder.options.advanced.latitude-field": "Latitude field name",
+    "google-geocoder.options.advanced.latitude-field.description": "Insert the name of the latitude field to be auto populated",
+    "google-geocoder.options.advanced.longitude-field": "Longitude field name",
+    "google-geocoder.options.advanced.longitude-field.description": "Insert the name of the longitude field to be auto populated"
+}
