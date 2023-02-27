@@ -35,31 +35,7 @@ npm i strapi-plugin-google-geocoder
 },
 ...
 ...
-{::comment}
 ```
-#### 2. Add "strapi::security" in middlewares.js
-```javascript
-// config/middlewares.ts
-...
-...
-'strapi::errors',
-{
-  name: "strapi::security",
-  config: {
-  contentSecurityPolicy: {
-    directives: {
-      "script-src": ["'self'", "maps.googleapis.com", "maps.gstatic.com"],
-      "img-src": ["'self'", "data:", "maps.googleapis.com", "maps.gstatic.com"],
-    },
-  },
-  },
-},
-'strapi::cors',
-...
-...
-```
-{:/comment}
-
 #### 2. Add custom field
 
 <!-- <img src="assets/instruction.gif" alt="Logo - google map picker" /> -->
