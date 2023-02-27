@@ -2,9 +2,8 @@
   <img src="assets/logo.svg" alt="Logo - google geocoder" />
 </div>
 <div align="center">
-  <h1>Strapi v4 - google map geocoder</h1>
-  <p>A simple plugin to geocode address
-</a> package</p>
+  <h1>Strapi v4 - google geocoder</h1>
+  <p>A simple strapi plugin to geocode address</p>
 </div>
 
 <img src="assets/banner.jpg" alt="banner - google geocoder" />
