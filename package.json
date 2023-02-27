@@ -44,11 +44,13 @@
     "typescript": "^4.9.4"
   },
   "author": {
-    "name": "Arrigo Razzini"
+    "name": "Arrigo Razzini",
+    "email": "arrigo.razzini@gmail.com",
   },
   "maintainers": [
     {
-      "name": "Arrigo Razzini"
+      "name": "Arrigo Razzini",
+      "email": "arrigo.razzini@gmail.com",
     }
   ],
   "engines": {
