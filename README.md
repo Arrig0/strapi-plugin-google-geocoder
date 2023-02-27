@@ -37,7 +37,7 @@ npm i strapi-plugin-google-geocoder
 ```
 #### 2. Add custom field
 
-<img src="assets/instruction.gif" alt="instructions - google geocoder" />
+<img src="assets/instructions.gif" alt="instructions - google geocoder" />
 
 
 
