@@ -21,10 +21,10 @@
     "react-google-autocomplete": "^2.7.0"
   },
   "devDependencies": {
+    "@strapi/design-system": "^1.6.1",
     "@strapi/icons": "^1.6.3",
     "@strapi/strapi": "^4.6.1",
     "immer": "^9.0.19",
-    "react-google-autocomplete": "^2.7.0",
     "react-redux": "^8.0.5",
     "strapi-typed": "^1.0.15",
     "ts-node": "^10.9.1",
