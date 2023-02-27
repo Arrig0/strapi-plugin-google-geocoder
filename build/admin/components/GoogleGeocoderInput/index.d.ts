@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { CustomFieldInputProps } from "strapi-typed";
 interface GoogleGeocoderInputProps extends CustomFieldInputProps {
     value: string | undefined;

@@ -17,6 +17,8 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
+  },
+  "devDependencies": {
     "@strapi/icons": "^1.6.3",
     "@strapi/strapi": "^4.6.1",
     "google-map-react": "^2.2.0",
@@ -24,9 +26,7 @@
     "react-google-autocomplete": "^2.7.0",
     "react-redux": "^8.0.5",
     "strapi-typed": "^1.0.15",
-    "ts-node": "^10.9.1"
-  },
-  "devDependencies": {
+    "ts-node": "^10.9.1",
     "@types/node": "^18.11.18",
     "@types/react": "^18.0.27",
     "@types/react-router-dom": "^5.3.3",
