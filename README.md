@@ -30,11 +30,12 @@ npm i strapi-plugin-google-geocoder
 ...
 "google-geocoder": {
     config: {
-      apiKey: env("GOOGLE_PUBLIC_KEY"), // required
+      apiKey: env("STRAPI_ADMIN_GOOGLE_MAPS_API_KEY"), // required
     },
 },
 ...
 ...
+<!--
 ```
 #### 2. Add "strapi::security" in middlewares.js
 ```javascript
@@ -57,6 +58,7 @@ npm i strapi-plugin-google-geocoder
 ...
 ...
 ```
+-->
 
 #### 3. Add custom field
 
