@@ -31,7 +31,7 @@ const fields = [
     'home',
     'postal_code',
 ];
-const GeocoderInput = ({ value, onChange, name, intlLabel, labelAction, required, attribute, description, placeholder, disabled, error, config: { apiKey }, }) => {
+const GeocoderInput = ({ value, onChange, name, intlLabel, labelAction, required, attribute, description, placeholder, disabled, error, config: { apiKey, types, componentRestrictions }, }) => {
     console.log('Google apiKey', apiKey);
     console.log('Field name', name);
     console.log('Field attribute', attribute);
@@ -85,10 +85,8 @@ const GeocoderInput = ({ value, onChange, name, intlLabel, labelAction, required
             maybeUpdateOtherFields(place);
         },
         options: {
-            types: ["geocode"],
-            componentRestrictions: {
-                country: ["it"]
-            }
+            types: types,
+            componentRestrictions: componentRestrictions
         }
     });
     return (react_1.default.createElement(Field_1.Field, { name: name, id: name, error: error, hint: description && formatMessage(description) },

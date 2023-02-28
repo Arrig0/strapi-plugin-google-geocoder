@@ -7,7 +7,7 @@ const react_1 = require("react");
 const react_redux_1 = require("react-redux");
 const helper_plugin_1 = require("@strapi/helper-plugin");
 const pluginId_1 = __importDefault(require("../pluginId"));
-const RESOLVE_CONFIG = `${pluginId_1.default}/resolve-config`;
+const constants_1 = require("../constants");
 const usePluginConfig = () => {
     const dispatch = (0, react_redux_1.useDispatch)();
     const toggleNotification = (0, helper_plugin_1.useNotification)();
@@ -36,7 +36,7 @@ const usePluginConfig = () => {
                 }
             }
         };
-        fetchData().then((data) => dispatch({ type: RESOLVE_CONFIG, data }));
+        fetchData().then((data) => dispatch({ type: constants_1.RESOLVE_CONFIG, data }));
         return () => abortController.abort();
     }, [dispatch, toggleNotification]);
     return { config, isConfigLoading };

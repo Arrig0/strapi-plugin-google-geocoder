@@ -45,12 +45,12 @@
   },
   "author": {
     "name": "Arrigo Razzini",
-    "email": "arrigo.razzini@gmail.com",
+    "email": "arrigo.razzini@gmail.com"
   },
   "maintainers": [
     {
       "name": "Arrigo Razzini",
-      "email": "arrigo.razzini@gmail.com",
+      "email": "arrigo.razzini@gmail.com"
     }
   ],
   "engines": {

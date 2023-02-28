@@ -18,9 +18,7 @@ import { useIntl } from 'react-intl';
 import getTrad from '../../utils/getTrad';
 import getAddress from '../../utils/getAddress';
 import usePluginConfig from "../../hooks/use-plugin-config";
-
-//new
-import { CustomFieldInputProps } from "strapi-typed";
+import { GoogleGeocoderInputProps } from "../../../types";
 import { Box } from "@strapi/design-system/Box";
 import { Status } from "@strapi/design-system";
 
@@ -33,14 +31,6 @@ function splitLastOccurrence(str, substring) {
   const after = str.slice(lastIndex + 1);
 
   return [before, after];
-}
-
-interface GoogleGeocoderInputProps extends CustomFieldInputProps {
-  value: string | undefined;
-  description?: any;
-  config: {
-    apiKey: string;
-  };
 }
 
 const fields = [
@@ -64,7 +54,7 @@ const GeocoderInput: React.FC<GoogleGeocoderInputProps> = ({
     placeholder,
     disabled,
     error,
-    config: { apiKey },
+    config: { apiKey, types, componentRestrictions },
 }) => {
   
     // todo: make works also in (dynamic zone component)
@@ -139,10 +129,10 @@ const GeocoderInput: React.FC<GoogleGeocoderInputProps> = ({
         },
         // these option should be from config
         options: {
-          types: ["geocode"], // neighborhood etc -> https://developers.google.com/maps/documentation/javascript/place-autocomplete#constrain-place-types
-          componentRestrictions: {
+          types: types, //["geocode"], // neighborhood etc -> https://developers.google.com/maps/documentation/javascript/place-autocomplete#constrain-place-types
+          componentRestrictions: componentRestrictions /*{
             country: ["it"]
-          }
+          }*/
         }
     });
 
@@ -185,8 +175,7 @@ const GeocoderInput: React.FC<GoogleGeocoderInputProps> = ({
 
 const GoogleGeocoderInput = (props: GoogleGeocoderInputProps) => {
   
-    // todo: make works also in (dynamic zone component)
-    // name is: address (single field) or neighborhoods.0.address (dynamic zone component)
+    // example -> name is: address (single field) or neighborhoods.0.address (dynamic zone component)
   
     const { config , isConfigLoading } = usePluginConfig();
     

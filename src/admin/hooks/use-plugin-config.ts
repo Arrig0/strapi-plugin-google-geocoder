@@ -2,8 +2,7 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { request, useNotification } from "@strapi/helper-plugin";
 import pluginId from '../pluginId';
-//import { RESOLVE_CONFIG } from "../constants";
-const RESOLVE_CONFIG = `${pluginId}/resolve-config`;
+import { RESOLVE_CONFIG } from "../constants";
 
 const usePluginConfig = () => {
     const dispatch = useDispatch();

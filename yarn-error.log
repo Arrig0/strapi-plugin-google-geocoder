@@ -1,5 +1,5 @@
 Arguments: 
-  /home/arrigo/.nvm/versions/node/v18.14.0/bin/node /home/arrigo/.yarn/bin/yarn.js install
+  /home/arrigo/.nvm/versions/node/v18.14.0/bin/node /home/arrigo/.yarn/bin/yarn.js build
 
 PATH: 
   /home/arrigo/.nvm/versions/node/v18.14.0/bin:/home/arrigo/.yarn/bin:/home/arrigo/.config/yarn/global/node_modules/.bin:/home/arrigo/.local/bin:/home/arrigo/.cache/activestate/bin:/home/arrigo/.cargo/bin:/home/arrigo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/arrigo/.komodoide/12.0/XRE/state
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  SyntaxError: /home/arrigo/public_html/strapi-plugins/google-geocoder/package.json: Unexpected token } in JSON at position 556
+  SyntaxError: /home/arrigo/public_html/strapi-plugins/google-geocoder/package.json: Unexpected token } in JSON at position 1414
       at JSON.parse (<anonymous>)
       at /home/arrigo/.yarn/lib/cli.js:1629:59
       at Generator.next (<anonymous>)
@@ -42,13 +42,13 @@ npm manifest:
     },
     "dependencies": {
       "immer": "^9.0.19",
-      "react-google-autocomplete": "^2.7.0",
+      "react-google-autocomplete": "^2.7.0"
     },
     "devDependencies": {
+      "@strapi/design-system": "^1.6.1",
       "@strapi/icons": "^1.6.3",
       "@strapi/strapi": "^4.6.1",
       "immer": "^9.0.19",
-      "react-google-autocomplete": "^2.7.0",
       "react-redux": "^8.0.5",
       "strapi-typed": "^1.0.15",
       "ts-node": "^10.9.1",
@@ -68,11 +68,13 @@ npm manifest:
       "typescript": "^4.9.4"
     },
     "author": {
-      "name": "Arrigo Razzini"
+      "name": "Arrigo Razzini",
+      "email": "arrigo.razzini@gmail.com",
     },
     "maintainers": [
       {
-        "name": "Arrigo Razzini"
+        "name": "Arrigo Razzini",
+        "email": "arrigo.razzini@gmail.com",
       }
     ],
     "engines": {
@@ -1137,7 +1139,7 @@ Lockfile:
       core-js-pure "^3.25.1"
       regenerator-runtime "^0.13.11"
   
-  "@babel/runtime@>=7.11.0", "@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.15.4", "@babel/runtime@^7.18.3", "@babel/runtime@^7.20.13", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+  "@babel/runtime@>=7.11.0", "@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.15.4", "@babel/runtime@^7.18.3", "@babel/runtime@^7.18.6", "@babel/runtime@^7.20.13", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
     version "7.21.0"
     resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.21.0.tgz#5b55c9d394e5fcf304909a8b00c07dc217b56673"
     integrity sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw==
@@ -1202,7 +1204,7 @@ Lockfile:
       "@codemirror/view" "^6.6.0"
       "@lezer/common" "^1.0.0"
   
-  "@codemirror/commands@^6.0.0":
+  "@codemirror/commands@^6.0.0", "@codemirror/commands@^6.1.0":
     version "6.2.1"
     resolved "https://registry.yarnpkg.com/@codemirror/commands/-/commands-6.2.1.tgz#ab5e979ad1458bbe395bf69ac601f461ac73cf08"
     integrity sha512-FFiNKGuHA5O8uC6IJE5apI5rT9gyjlw4whqy4vlcX0wE/myxL6P1s0upwDhY4HtMWLOwzwsp0ap3bjdQhvfDOA==
@@ -1250,7 +1252,7 @@ Lockfile:
       "@codemirror/view" "^6.0.0"
       crelt "^1.0.5"
   
-  "@codemirror/state@^6.0.0", "@codemirror/state@^6.1.4", "@codemirror/state@^6.2.0":
+  "@codemirror/state@^6.0.0", "@codemirror/state@^6.1.1", "@codemirror/state@^6.1.4", "@codemirror/state@^6.2.0":
     version "6.2.0"
     resolved "https://registry.yarnpkg.com/@codemirror/state/-/state-6.2.0.tgz#a0fb08403ced8c2a68d1d0acee926bd20be922f2"
     integrity sha512-69QXtcrsc3RYtOtd+GsvczJ319udtBf1PTrr2KbLWM/e2CXUPnh0Nz9AUo8WfhSQ7GeL8dPVNUmhQVgpmuaNGA==
@@ -1631,13 +1633,6 @@ Lockfile:
       intl-messageformat "10.3.0"
       tslib "^2.4.0"
   
-  "@googlemaps/js-api-loader@^1.7.0":
-    version "1.15.1"
-    resolved "https://registry.yarnpkg.com/@googlemaps/js-api-loader/-/js-api-loader-1.15.1.tgz#7d5f1d55a4ec5c99b1d8f0708f3a46b83a71384c"
-    integrity sha512-AsnEgNsB7S/VdrHGEQUaUM2e5tmjFGKBAfzR/AqO8O7TPq/jQGvoRw5liPBw4EMF38RDsHmKDV89q/X+qiUREQ==
-    dependencies:
-      fast-deep-equal "^3.1.3"
-  
   "@graphql-tools/merge@8.3.1":
     version "8.3.1"
     resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-8.3.1.tgz#06121942ad28982a14635dbc87b5d488a041d722"
@@ -1847,11 +1842,6 @@ Lockfile:
     integrity sha512-JPQe3mwJlzEVqy67iQiiGozhcngbO8QBgpqZM6oL1Wj/dXckrEexpBLeFkq0edtW5IqnPRFxA24BHJni8Js69w==
     dependencies:
       "@lezer/common" "^1.0.0"
-  
-  "@mapbox/point-geometry@^0.1.0":
-    version "0.1.0"
-    resolved "https://registry.yarnpkg.com/@mapbox/point-geometry/-/point-geometry-0.1.0.tgz#8a83f9335c7860effa2eeeca254332aa0aeed8f2"
-    integrity sha512-6j56HdLTwWGO0fJPlrZtdU/B13q8Uwmo18Ck2GnGgN9PCFyKTZ3UbXeEdRFh18i9XQ92eH2VdtpJHpBD3aripQ==
   
   "@nodelib/fs.scandir@2.1.5":
     version "2.1.5"
@@ -2228,6 +2218,19 @@ Lockfile:
       "@internationalized/number" "^3.1.1"
       "@radix-ui/react-use-callback-ref" "^1.0.0"
       "@uiw/react-codemirror" "4.8.1"
+      compute-scroll-into-view "^1.0.17"
+      prop-types "^15.7.2"
+  
+  "@strapi/design-system@^1.6.1":
+    version "1.6.4"
+    resolved "https://registry.yarnpkg.com/@strapi/design-system/-/design-system-1.6.4.tgz#4f6b29332ea4cc427b24de572ca7780c744eb0ef"
+    integrity sha512-Xfv2ovdHlLbSgtWRwBPB/L21FjdZL7967ZG0ECNP3I2mseq3j2bV7vrFvPL/COsMfOUQmu8CcCoesU5BfZYvEw==
+    dependencies:
+      "@codemirror/lang-json" "^6.0.1"
+      "@floating-ui/react-dom" "^1.0.0"
+      "@internationalized/number" "^3.1.1"
+      "@radix-ui/react-use-callback-ref" "^1.0.0"
+      "@uiw/react-codemirror" "^4.19.7"
       compute-scroll-into-view "^1.0.17"
       prop-types "^15.7.2"
   
@@ -3085,6 +3088,19 @@ Lockfile:
     dependencies:
       "@ucast/core" "^1.4.1"
   
+  "@uiw/codemirror-extensions-basic-setup@4.19.9":
+    version "4.19.9"
+    resolved "https://registry.yarnpkg.com/@uiw/codemirror-extensions-basic-setup/-/codemirror-extensions-basic-setup-4.19.9.tgz#9c14901c7165bba9ef9a06d9c7a80d025e9c1ad7"
+    integrity sha512-O4yAgVpD3Pon4t4+lwZ2MTGg2TeU/Jv8YzKS9ap4fP/WMTVrKmpdq+DOafbhZSlhmU0XGfQPPJ4WX6rtZgx3Rw==
+    dependencies:
+      "@codemirror/autocomplete" "^6.0.0"
+      "@codemirror/commands" "^6.0.0"
+      "@codemirror/language" "^6.0.0"
+      "@codemirror/lint" "^6.0.0"
+      "@codemirror/search" "^6.0.0"
+      "@codemirror/state" "^6.0.0"
+      "@codemirror/view" "^6.0.0"
+  
   "@uiw/react-codemirror@4.8.1":
     version "4.8.1"
     resolved "https://registry.yarnpkg.com/@uiw/react-codemirror/-/react-codemirror-4.8.1.tgz#7edb13e42256dfc0b20986b7a677452d3655e717"
@@ -3092,6 +3108,18 @@ Lockfile:
     dependencies:
       "@babel/runtime" ">=7.11.0"
       "@codemirror/theme-one-dark" "^6.0.0"
+      codemirror "^6.0.0"
+  
+  "@uiw/react-codemirror@^4.19.7":
+    version "4.19.9"
+    resolved "https://registry.yarnpkg.com/@uiw/react-codemirror/-/react-codemirror-4.19.9.tgz#c999e35eb2739ff15031a358b675393576909474"
+    integrity sha512-U+A1fSfELMFFs5a+ZOPwCJKZMYaMy6QHOfNOOV7WhSveM7GYHT970GjTfs2dn1LlvhebwyK9ei0rCXZdsI9n9Q==
+    dependencies:
+      "@babel/runtime" "^7.18.6"
+      "@codemirror/commands" "^6.1.0"
+      "@codemirror/state" "^6.1.1"
+      "@codemirror/theme-one-dark" "^6.0.0"
+      "@uiw/codemirror-extensions-basic-setup" "4.19.9"
       codemirror "^6.0.0"
   
   "@webassemblyjs/ast@1.11.1":
@@ -5380,7 +5408,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
     integrity sha512-tvtQIeLVHjDkJYnzf2dgVMxfuSGJeM/7UCG17TT4EumTfNtF+0nebF/4zWOIkCreAbtNqhGEboB6BWrwqNaw4Q==
   
-  eventemitter3@^4.0.0, eventemitter3@^4.0.4:
+  eventemitter3@^4.0.0:
     version "4.0.7"
     resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
     integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
@@ -6067,16 +6095,6 @@ Lockfile:
     version "0.1.2"
     resolved "https://registry.yarnpkg.com/globrex/-/globrex-0.1.2.tgz#dd5d9ec826232730cd6793a5e33a9302985e6098"
     integrity sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==
-  
-  google-map-react@^2.2.0:
-    version "2.2.0"
-    resolved "https://registry.yarnpkg.com/google-map-react/-/google-map-react-2.2.0.tgz#10b23a42526556adaacbaeec114a72bf3b733053"
-    integrity sha512-UPiTwR3qNKJJizURXTuCbnBr8kLtLsiikj/KH1UTLGhadnU6fT+CE3CLw1lzZwk5zZIduQQODyIcEwNInECmUg==
-    dependencies:
-      "@googlemaps/js-api-loader" "^1.7.0"
-      "@mapbox/point-geometry" "^0.1.0"
-      eventemitter3 "^4.0.4"
-      prop-types "^15.7.2"
   
   gopd@^1.0.1:
     version "1.0.1"

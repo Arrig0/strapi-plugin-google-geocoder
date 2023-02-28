@@ -1,12 +1,13 @@
 import produce from "immer";
 
-//import { RESOLVE_CONFIG } from "../constants";
-const RESOLVE_CONFIG = `google-geocoder/resolve-config`;
+import { RESOLVE_CONFIG } from "../constants";
 
 const initialState = {
   isConfigLoading: true,
   config: {
       apiKey: null,
+      types: ['geocode'],
+      componentRestrictions: {}
   },
 };
 

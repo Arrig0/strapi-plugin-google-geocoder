@@ -4,16 +4,18 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const immer_1 = __importDefault(require("immer"));
-const RESOLVE_CONFIG = `google-geocoder/resolve-config`;
+const constants_1 = require("../constants");
 const initialState = {
     isConfigLoading: true,
     config: {
         apiKey: null,
+        types: ['geocode'],
+        componentRestrictions: {}
     },
 };
 const configReducer = (0, immer_1.default)((state = initialState, action) => {
     switch (action.type) {
-        case RESOLVE_CONFIG: {
+        case constants_1.RESOLVE_CONFIG: {
             state.isConfigLoading = false;
             state.config = action.data;
             break;
