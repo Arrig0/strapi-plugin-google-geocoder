@@ -3,7 +3,7 @@
 </div>
 <div align="center">
   <h1>Strapi v4 - google geocoder</h1>
-  <p>A simple strapi plugin to geocode address</p>
+  <p>A simple strapi plugin to geocode address, with <a href="https://github.com/ErrorPro/react-google-autocomplete/">@react-google-autocmplete</a> input component</p>
 </div>
 
 <img src="assets/banner.png" alt="banner - google geocoder" />
