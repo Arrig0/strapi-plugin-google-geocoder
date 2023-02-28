@@ -1,10 +1,10 @@
 {
   "name": "strapi-plugin-google-geocoder",
   "version": "1.0.1",
-  "description": "This is the description of the plugin.",
+  "description": "Strapi geocoder custom field.",
   "strapi": {
     "name": "google-geocoder",
-    "description": "Description of Google Geocoder plugin",
+    "description": "Google geocoder custom field",
     "kind": "plugin",
     "displayName": "Google Geocoder"
   },
