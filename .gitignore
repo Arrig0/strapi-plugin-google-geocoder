@@ -8,3 +8,10 @@ results
 node_modules
 .node_history
 
+############################
+# My tests
+############################
+
+src/admin/components/map-snippet.txt
+src/admin/components/Marker
+src/admin/components/Marker/*

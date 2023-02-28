@@ -29,7 +29,11 @@ npm i strapi-plugin-google-geocoder
 ...
 "google-geocoder": {
     config: {
-      apiKey: env("STRAPI_ADMIN_GOOGLE_MAPS_API_KEY"), // required
+      apiKey: env("STRAPI_ADMIN_GOOGLE_MAPS_API_KEY"), // required,
+      types: ['geocode'], // optional, default is 'geocode' - more info on  https://developers.google.com/maps/documentation/javascript/place-autocomplete#constrain-place-types
+      componentRestrictions: { // optional
+        country: ["it"], // restrict search result to specified country only
+      } 
     },
 },
 ...
