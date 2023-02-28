@@ -112,9 +112,5 @@ const GoogleGeocoderInput = (props) => {
                 react_1.default.createElement("br", null),
                 react_1.default.createElement(Link_1.Link, { href: "https://github.com/spalz/strapi-plugin-google-map-picker", isExternal: true }, "Installation Instructions (GitHub)"))))) : null;
 };
-{
-}
-{
-}
 exports.default = GoogleGeocoderInput;
 //# sourceMappingURL=index.js.map
